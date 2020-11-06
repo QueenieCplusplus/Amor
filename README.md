@@ -137,3 +137,9 @@ start from step 4:
         [output is Client IP and Hostname.Location as InsatanceGroupName.Zone]
         
      ![client ip](https://cdn.qwiklabs.com/cB4rkhddQchP1iTAc7xNeF5Bly34SwjtieR406NQM9w%3D)
+
+start from step 5:
+
+> LB config
+
+* 5.1, in cloud console, navigate to Network >> LB
