@@ -43,6 +43,8 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 
 (12) test Amor
 
+------------------
+
 from step 1
 
 > config FW for Backend
