@@ -89,3 +89,8 @@ from step 1
  * tips & attentions:
  
  The network tag http-server ensures that the HTTP and Health Check firewall rules apply to these instances template.
+
+* 2.3, copy its property to new instance template, and name it.
+
+       Now create another instance template for subnet-b by copying us-east1-template.
+
