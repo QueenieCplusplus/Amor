@@ -41,3 +41,5 @@ from step 1
 * 1.1, in cloud console, navigate to Network >> VPC >> FW
 
 ![fw](https://cdn.qwiklabs.com/o3ZzeAWb50voTy3ENkYicuiDP9Wen8Sybx83FHz9XhY%3D)
+
+* 1.2, to create FW rule, and check rules for internal, RDP, SSH, ICMP.
