@@ -157,6 +157,10 @@ start from step 5:
             Balancing mode	Rate
             Maximum RPS	            50
             Capacity	            100
+            
+            [output]
+            
+     ![LB's Backend Service](https://cdn.qwiklabs.com/4ak8cQih5SEtXSTrnspw0zooJZm3ZmBoBpEk3KZDz7o%3D)
 
 
 * tips & attentions:
@@ -164,3 +168,13 @@ start from step 5:
 Backend services direct incoming traffic to one or more attached backends. Each backend is composed of an instance group and additional serving capacity metadata.
 
 This configuration means that the load balancer attempts to keep each instance of us-east1-mig at or below 50 requests per second (RPS).
+
+
+* 5.3, then create a health check rule for this LB's Backend Service.
+
+
+            Property	Value (select option as specified)
+            Name	http-health-check
+            Protocol	TCP
+            Port	80
+            
