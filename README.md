@@ -1,8 +1,9 @@
 # Amor
-LB
+
+LB to forward User's req to the  Backend Service that is closet to user.
 
 
-            User <---------------- PoP, Proxy, Amor ------- FW ----------> Service (Instance Group -> Instance)
+            User <---------------- PoP, Proxy, Amor, LB  ------- FW ----------> Service (Instance Group -> Instance)
 
 
 ![amor](https://cdn.qwiklabs.com/7wJtCqbfTFLwKCpOMzUSyPjVKBjUouWHbduOqMpfRiM%3D)
@@ -219,3 +220,8 @@ start from step 7:
 * 7.1, After Review and Finalize the Load Balancer, then click on "Create".
 
     ![review](https://cdn.qwiklabs.com/HYVSJ9uZjtwq%2BA8XqZTdafRPIQrtKZ2E6sfJuakiRFI%3D)
+    
+* 7.2, Name the Load Balancer, and find its IP addr.Click on the name of the load balancer (http-lb).
+Note the IPv4 and IPv6 addresses of the load balancer for the next task. 
+They will be referred to as [LB_IP_v4] and [LB_IP_v6], respectively.
+
