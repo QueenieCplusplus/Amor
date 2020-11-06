@@ -333,6 +333,10 @@ start from step 12
       ** SIEGE 4.0.2
       ** Preparing 250 concurrent users for battle.
       The server is now under siege...
+      
+      [to see Log Entry of siege-vm req to LB]
+      
+    ![log](https://cdn.qwiklabs.com/v8S72ZbDR5t%2BeSvmpwlqEKJS2105mC%2Fq9E%2FW%2FHb3eo0%3D)
 
 * 12.2, test normal browser's connectivity to LB.
 
@@ -341,4 +345,5 @@ Open a new tab in your browser and navigate to http://[LB_IP_v4]. Make sure to r
       [output]
       You can access the HTTP LB from your browser because of the default rule to allow traffic; 
       however, you cannot access it from the siege-vm because of the deny rule (Amor) that you implemented.
-      
+ 
+ 
