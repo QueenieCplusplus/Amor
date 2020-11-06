@@ -225,3 +225,8 @@ start from step 7:
 Note the IPv4 and IPv6 addresses of the load balancer for the next task. 
 They will be referred to as [LB_IP_v4] and [LB_IP_v6], respectively.
 
+* tips & attentions:
+
+It might take up to 5 minutes to access the HTTP Load Balancer. In the meantime, you might get a 404 or 502 error. Keep trying until you see the page of one of the backends.
+
+Depending on your proximity to us-east1 and europe-west1, you traffic is either forwarded to a us-east1-mig or europe-west1-mig instance.
