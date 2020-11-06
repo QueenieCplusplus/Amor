@@ -118,3 +118,5 @@ from step 3:
 Managed instance groups offer Autoscaling capabilities that allow you to automatically add or remove instances from a managed instance group based on increases or decreases in load. 
 
 Autoscaling helps your app gracefully handle increases in traffic and reduces cost when the need for resources is lower. You just define the autoscaling policy and the autoscaler performs automatic scaling based on the measured load.
+
+* 3.3, create another instance group, and name it europe-west1-mig, and use europe-west1-template.
