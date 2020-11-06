@@ -180,6 +180,10 @@ This configuration means that the load balancer attempts to keep each instance o
             Protocol	TCP
             Port	80
             
+            [output]
+            
+    ![](https://cdn.qwiklabs.com/O3aCrf4mUTpnJaZ6XlNAgyTYmfPkrJCw6diNUWvRTd0%3D)
+            
 start from step 6:
 
 > LB config (Frontend Service)
