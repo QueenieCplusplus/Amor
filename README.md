@@ -190,4 +190,11 @@ start from step 6:
 
 The host and path rules determine how your traffic will be directed. For example, you could direct video traffic to one backend and static traffic do another backend. (we pass it in this step.)
 
-* 6.1,
+* 6.1, click on "frontend config", and set up its properties.
+
+
+            Property	Value (type value or select option as specified)
+            Protocol	HTTP
+            IP version	IPv4
+            IP address	Ephemeral
+            Port	80
