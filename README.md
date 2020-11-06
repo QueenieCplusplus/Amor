@@ -143,3 +143,7 @@ start from step 5:
 > LB config
 
 * 5.1, in cloud console, navigate to Network >> LB
+
+         Select From Internet to my VMs, and click Continue.
+
+         Set the Name to http-lb [any name you like].
