@@ -33,7 +33,9 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 
 (8) make a VM to do test for the Load Balancer 
 
-(9) config Amor List (Deny/Allow) to the LB
+(9) monitor network flow from user(vm created in step 8 to backend service created in step 5)
+
+(10) config Amor List (Deny/Allow) to the LB
 
 
 
@@ -266,3 +268,9 @@ Given that us-west1 is closer to us-east1 than to europe-west1, traffic should b
          ** SIEGE 4.0.2
          ** Preparing 250 concurrent users for battle.
          The server is now under siege...
+
+start from step 9:
+
+> Monitor Network Flow for LB
+
+* 9.1, 
