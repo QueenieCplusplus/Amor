@@ -147,3 +147,18 @@ start from step 5:
          Select From Internet to my VMs, and click Continue.
 
          Set the Name to http-lb [any name you like].
+
+* 5.2, then click on "Backend Services Config". For Backend services & backend buckets, click Create or select backend services & backend buckets, then click Backend services, and then click Create a backend service, and config its properties.
+
+            Property	            Value (select option as specified)
+            Name	            http-backend [LB's Backend Service Name]
+            Instance group	us-east1-mig
+            Port numbers	80
+            Balancing mode	Rate
+            Maximum RPS	            50
+            Capacity	            100
+
+
+* tips & attentions:
+
+Backend services direct incoming traffic to one or more attached backends. Each backend is composed of an instance group and additional serving capacity metadata.
