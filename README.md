@@ -24,13 +24,15 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 
 (4) check/explore External IP of the VM instance (part of the instance group in step 3)
 
-(5) naviagate to Network in console, select LB feature to do config 
+(5) config Backend Service for Load Balancer
 
-(6) note the IPv4/IPv6 of the LB_IP (IP will be client IP, and Host.Location as InstanceGroupName.Zone)
+(6) config Frontend Service for Load Balancer
 
-(7) test and pressure test to the LB_IP
+(7) note the IPv4/IPv6 of the LB_IP (IP will be client IP, and Host.Location as InstanceGroupName.Zone)
 
-(8) config Amor List (Deny/Allow) to the LB
+(8) test and pressure test to the LB_IP
+
+(9) config Amor List (Deny/Allow) to the LB
 
 
 
@@ -140,7 +142,7 @@ start from step 4:
 
 start from step 5:
 
-> LB config
+> LB config (Backend Service)
 
 * 5.1, in cloud console, navigate to Network >> LB
 
@@ -178,3 +180,8 @@ This configuration means that the load balancer attempts to keep each instance o
             Protocol	TCP
             Port	80
             
+start from step 6:
+
+> LB config (Frontend Service)
+
+* 6.1,
