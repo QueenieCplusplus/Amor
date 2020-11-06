@@ -308,3 +308,6 @@ start from step 11:
             Action	Deny
             Deny status	403 (Forbidden)
             Priority	1000
+
+* 11.3, finish the config after select Load balancer backend service for Type, and select http-backend for Target.
+
