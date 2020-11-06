@@ -3,7 +3,7 @@
 LB to forward User's req to the  Backend Service that is closet to user.
 
 
-            User <---------------- PoP, Proxy, Amor, LB  ------- FW ----------> Service (Instance Group -> Instance)
+      User <------------ Amor ----- Proxy, LB  ----- POP ------- FW ----------> Service (Instance Group -> Instance)
 
 
 ![amor](https://cdn.qwiklabs.com/7wJtCqbfTFLwKCpOMzUSyPjVKBjUouWHbduOqMpfRiM%3D)
@@ -36,10 +36,10 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 (9) monitor network flow from user(vm created in step 8 to backend service created in step 5)
 
 (10) stop Request Test to LB
- 
-(11) config Amor List (Deny/Allow) to the LB
 
+(11) use Amor for LB
 
+(12) test Amor
 
 from step 1
 
@@ -286,3 +286,17 @@ start from step 10:
 > Stop Req to LB
 
 * 10.1, Return to the SSH terminal of siege-vm, and press CTRL+C to stop siege.
+
+* 10.2, to explore External IP of the siege-vm.
+In the Console, navigate to Navigation menu (mainmenu.png) > Compute Engine > VM instances.
+Note the External IP of the siege-vm. This will be referred to as [SIEGE_IP].
+
+start from step 11:
+
+> Make usage of Amor for LB
+
+* 11.1, in cloud console, navigate to Network >> Security >> Cloud Amor, config it and add rule.
+
+           Property	           Value (type value or select option as specified)
+            Name	           denylist-siege
+           Default rule action	Allow
