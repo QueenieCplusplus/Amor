@@ -216,4 +216,6 @@ start from step 7:
 
 > explore LB IP
 
-* 7.1, 
+* 7.1, After Review and Finalize the Load Balancer, then click on "Create".
+
+    ![review](https://cdn.qwiklabs.com/HYVSJ9uZjtwq%2BA8XqZTdafRPIQrtKZ2E6sfJuakiRFI%3D)
