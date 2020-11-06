@@ -42,4 +42,13 @@ from step 1
 
 ![fw](https://cdn.qwiklabs.com/o3ZzeAWb50voTy3ENkYicuiDP9Wen8Sybx83FHz9XhY%3D)
 
-* 1.2, to create FW rule, and check rules for internal, RDP, SSH, ICMP.
+* 1.2, to create FW rule, and check rules for internal, RDP, SSH, ICMP, then config the value for the property.
+
+            Property	       Value (type value or select option as specified)
+            Name	       default-allow-health-check
+            Network	       default
+            Targets	       Specified target tags
+            Target tags	       http-server
+            Source filter	IP Ranges
+            Source IP ranges	130.211.0.0/22, 35.191.0.0/16
+            Protocols and ports	Specified protocols and ports, and then check tcp
