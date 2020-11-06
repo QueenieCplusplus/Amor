@@ -110,5 +110,11 @@ from step 3:
             Autoscaling > Autoscaling metrics > Metric type	CPU utilization
             Target CPU utilization	           80
             Minimum number of instances	1
-            Maximum number of instances	5
+            Maximum number of instances	5 (auto scale up depends on traffic performance)
             Cool-down period	            45
+
+* tips & attentions:
+
+Managed instance groups offer Autoscaling capabilities that allow you to automatically add or remove instances from a managed instance group based on increases or decreases in load. 
+
+Autoscaling helps your app gracefully handle increases in traffic and reduces cost when the need for resources is lower. You just define the autoscaling policy and the autoscaler performs automatic scaling based on the measured load.
