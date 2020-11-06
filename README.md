@@ -207,3 +207,13 @@ The host and path rules determine how your traffic will be directed. For example
             IP version	IPv6
             IP address	Ephemeral
             Port	80
+
+* tips & attentions:
+
+HTTP(S) load balancing supports both IPv4 and IPv6 addresses for client traffic. Client IPv6 requests are terminated at the global load balancing layer, then proxied over IPv4 to your backends.
+
+start from step 7:
+
+> explore LB IP
+
+* 7.1, 
