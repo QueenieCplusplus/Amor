@@ -243,3 +243,7 @@ start from step 8:
             Name	siege-vm
             Region	us-west1
             Zone	us-west1-c
+            
+* tips & attentions:
+
+Given that us-west1 is closer to us-east1 than to europe-west1, traffic should be forwarded only to us-east1-mig (unless the load is too high).
