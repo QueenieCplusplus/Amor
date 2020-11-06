@@ -45,6 +45,8 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 
 ------------------
 
+# GCE Instance Group & its Instance Templates
+
 from step 1
 
 > config FW for Backend
