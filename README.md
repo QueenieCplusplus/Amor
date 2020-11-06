@@ -300,3 +300,11 @@ start from step 11:
            Property	           Value (type value or select option as specified)
             Name	           denylist-siege
            Default rule action	Allow
+
+* 11.2, add rule.
+
+            Property	Value (type value or select option as specified)
+            Condition	Enter the SIEGE_IP // copy ip which shows in step 10.2
+            Action	Deny
+            Deny status	403 (Forbidden)
+            Priority	1000
