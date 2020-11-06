@@ -37,7 +37,7 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 
 (10) stop Request Test to LB
 
-(11) use Amor for LB
+(11) use Amor Security Policy for LB
 
 (12) test Amor
 
