@@ -273,4 +273,8 @@ start from step 9:
 
 > Monitor Network Flow for LB
 
-* 9.1, 
+* 9.1, in cloud console, navigate to Network >> LB >> Backend >> [Backend Service Name].
+
+       [output in UI]
+       
+    ![flow](https://cdn.qwiklabs.com/YsNXQ3Hvf12bu7zmL%2B4cxUeGO01%2B4uchVOnaVW1QcMc%3D)
