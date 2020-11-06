@@ -293,11 +293,14 @@ start from step 10:
 In the Console, navigate to Navigation menu (mainmenu.png) > Compute Engine > VM instances.
 Note the External IP of the siege-vm. This will be referred to as [SIEGE_IP].
 
+
+# Armor
+
 start from step 11:
 
-> Make usage of Amor for LB
+> Make usage of Armor for LB
 
-* 11.1, in cloud console, navigate to Network >> Security >> Cloud Amor, config it and add rule.
+* 11.1, in cloud console, navigate to Network >> Security >> Cloud Armor, config it and add rule.
 
            Property	           Value (type value or select option as specified)
             Name	           denylist-siege
