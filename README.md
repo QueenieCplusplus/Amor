@@ -2,6 +2,9 @@
 LB
 
 
+            User <---------------- PoP, Proxy, Amor ------- FW ----------> Service (Instance Group -> Instance)
+
+
 ![amor](https://cdn.qwiklabs.com/7wJtCqbfTFLwKCpOMzUSyPjVKBjUouWHbduOqMpfRiM%3D)
 
 Google Cloud HTTP(S) load balancing is implemented at the edge of Google's network in Google's points of presence (POP) around the world. User traffic directed to an HTTP(S) load balancer enters the POP closest to the user and is then load balanced over Google's global network to the closest backend that has sufficient capacity available.
