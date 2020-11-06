@@ -31,7 +31,7 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 
 (7) note the IPv4/IPv6 of the LB_IP (IP will be client IP, and Host.Location as InstanceGroupName.Zone)
 
-(8) test and pressure test to the LB_IP
+(8) make a VM to do test for the Load Balancer 
 
 (9) config Amor List (Deny/Allow) to the LB
 
@@ -232,3 +232,14 @@ It might take up to 5 minutes to access the HTTP Load Balancer. In the meantime,
 Depending on your proximity to us-east1 and europe-west1, you traffic is either forwarded to a us-east1-mig or europe-west1-mig instance.
 
 If you have a local IPv6 address, try the IPv6 address of the HTTP Load Balancer by navigating to http://[LB_IP_v6]. Make sure to replace [LB_IP_v6] with the IPv6 address of the load balancer.
+
+start from step 8:
+
+> To Do Test.
+
+* 8.1, create a new VM instance (we hereby set it to us-west), later on, we will connect it to Backend in us-east1 (location=zone) & europ-west1 (location=zone).
+
+            Property	Value (type value or select option as specified)
+            Name	siege-vm
+            Region	us-west1
+            Zone	us-west1-c
