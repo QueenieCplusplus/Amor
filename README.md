@@ -305,7 +305,7 @@ In the Console, navigate to Navigation menu (mainmenu.png) > Compute Engine > VM
 Note the External IP of the siege-vm. This will be referred to as [SIEGE_IP].
 
 
-# Armor
+# Armor, Securiy Policy Tool
 
 start from step 11:
 
