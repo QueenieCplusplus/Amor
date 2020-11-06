@@ -37,6 +37,8 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 
 (10) stop Request Test to LB
 
+![armor](https://raw.githubusercontent.com/QueenieCplusplus/QuickGoThru/master/armor.jpg)
+
 (11) use Amor Security Policy for LB
 
 (12) test Amor
