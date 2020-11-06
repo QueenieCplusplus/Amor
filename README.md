@@ -315,7 +315,30 @@ start from step 12
 
 > Test Amor (within its DenyList)
 
-* 12.1, return to ssh of the siege-vm.
+* 12.1, return to ssh of the siege-vm, and test connectivity with LB.
 
       curl http://$LB_IP
+      
+      [output is 404]
+      
+      <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</
+      title>403 Forbidden
+      
+      
+      siege -c 250 http://$LB_IP
+      
+      [output: los shows the the traffic is blocked due to security policy]
+      
+      [alert] Zip encoding disabled; siege requires zlib support to enable it
+      ** SIEGE 4.0.2
+      ** Preparing 250 concurrent users for battle.
+      The server is now under siege...
 
+* 12.2, test normal browser's connectivity to LB.
+
+Open a new tab in your browser and navigate to http://[LB_IP_v4]. Make sure to replace [LB_IP_v4] with the IPv4 address of the load balancer.
+
+      [output]
+      You can access the HTTP LB from your browser because of the default rule to allow traffic; 
+      however, you cannot access it from the siege-vm because of the deny rule (Amor) that you implemented.
+      
