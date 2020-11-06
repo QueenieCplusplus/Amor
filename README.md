@@ -31,3 +31,13 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 (7) test and pressure test to the LB_IP
 
 (8) config Amor List (Deny/Allow) to the LB
+
+
+
+from step 1
+
+> config FW for Backend
+
+* 1.1, in cloud console, navigate to Network >> VPC >> FW
+
+![fw](https://cdn.qwiklabs.com/o3ZzeAWb50voTy3ENkYicuiDP9Wen8Sybx83FHz9XhY%3D)
