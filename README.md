@@ -1,4 +1,4 @@
-# Amor
+# LB & Armor Security Policy
 
 LB to forward User's req to the  Backend Service that is closet to user.
 
