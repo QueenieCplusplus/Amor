@@ -79,7 +79,7 @@ from step 1
             REGION=`echo "$META_REGION_STRING" | awk -F/ '{print $4}'`
             sed -i "s|region-here|$REGION|" index.php
 
-* 2.2, click on "networking" tab, to config its network properties.
+* 2.2, click on "networking" tab, to config its network properties, and wait for the instance template to be created.
 
             Property	  Value (type value or select option as specified)
             Network	  default
