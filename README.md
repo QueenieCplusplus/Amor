@@ -240,7 +240,7 @@ start from step 8:
 * 8.1, create a new VM instance (we hereby set it to us-west), later on, we will connect it to Backend in us-east1 (location=zone) & europ-west1 (location=zone).
 
             Property	Value (type value or select option as specified)
-            Name	kates-vm
+            Name	siege-vm
             Region	us-west1
             Zone	us-west1-c
             
@@ -248,4 +248,21 @@ start from step 8:
 
 Given that us-west1 is closer to us-east1 than to europe-west1, traffic should be forwarded only to us-east1-mig (unless the load is too high).
 
-* 8.2, For kates-vm, click SSH to launch a terminal and connect.
+* 8.2, For siege-vm, click SSH to launch a terminal and connect in cloud console.
+
+* 8.3, in cloud shell, type cmd line below.
+
+          sudo apt-get -y install siege
+          
+          export LB_IP=[LB_IP_v4]
+          
+          siege -c 250 http://$LB_IP
+          
+          [output]
+          
+          New configuration template added to /home/cloudcurriculumdeveloper/.siege
+          Run siege -C to view the current settings in that file
+          [alert] Zip encoding disabled; siege requires zlib support to enable it: No such file or directory
+         ** SIEGE 4.0.2
+         ** Preparing 250 concurrent users for battle.
+         The server is now under siege...
