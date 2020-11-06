@@ -311,3 +311,11 @@ start from step 11:
 
 * 11.3, finish the config after select Load balancer backend service for Type, and select http-backend for Target.
 
+start from step 12
+
+> Test Amor (within its DenyList)
+
+* 12.1, return to ssh of the siege-vm.
+
+      curl http://$LB_IP
+
