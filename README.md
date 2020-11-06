@@ -120,3 +120,20 @@ Managed instance groups offer Autoscaling capabilities that allow you to automat
 Autoscaling helps your app gracefully handle increases in traffic and reduces cost when the need for resources is lower. You just define the autoscaling policy and the autoscaler performs automatic scaling based on the measured load.
 
 * 3.3, create another instance group, and name it europe-west1-mig, and use europe-west1-template.
+
+
+start from step 4:
+
+> create GCE instance using GCE instance template, and explore its External IP addr.
+
+* 4.1, in cloud console, navigate to GCE >> VM instance.
+
+        Notice the instances that start with us-east1-mig and europe-west1-mig.
+
+        These instances are part of the managed instance groups.
+        
+        And click on the External IP of the instance created.
+        
+        [output is Client IP and Hostname.Location as InsatanceGroupName.Zone]
+        
+     ![client ip](https://cdn.qwiklabs.com/cB4rkhddQchP1iTAc7xNeF5Bly34SwjtieR406NQM9w%3D)
