@@ -3,7 +3,7 @@
 LB to forward User's req to the  Backend Service that is closet to user.
 
 
-      User <------------ Amor ----- Proxy, LB  ----- POP ------- FW ----------> Service (Instance Group -> Instance)
+      User <------------ Amor ----- Proxy, LB  ----- POP(point of presence, edge of Cloud) ------- FW ----------> Service (Instance Group -> Instance)
 
 
 ![amor](https://cdn.qwiklabs.com/7wJtCqbfTFLwKCpOMzUSyPjVKBjUouWHbduOqMpfRiM%3D)
