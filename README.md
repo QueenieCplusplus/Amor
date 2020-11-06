@@ -147,6 +147,8 @@ start from step 4:
         
      ![client ip](https://cdn.qwiklabs.com/cB4rkhddQchP1iTAc7xNeF5Bly34SwjtieR406NQM9w%3D)
 
+# Backend Service
+
 start from step 5:
 
 > LB config (Backend Service)
@@ -189,7 +191,9 @@ This configuration means that the load balancer attempts to keep each instance o
             [output]
             
     ![](https://cdn.qwiklabs.com/O3aCrf4mUTpnJaZ6XlNAgyTYmfPkrJCw6diNUWvRTd0%3D)
-    
+ 
+ 
+# Frontend Service
             
 start from step 6:
 
@@ -218,6 +222,9 @@ The host and path rules determine how your traffic will be directed. For example
 * tips & attentions:
 
 HTTP(S) load balancing supports both IPv4 and IPv6 addresses for client traffic. Client IPv6 requests are terminated at the global load balancing layer, then proxied over IPv4 to your backends.
+
+ 
+# Load Balancer
 
 start from step 7:
 
