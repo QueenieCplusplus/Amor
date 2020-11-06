@@ -52,3 +52,40 @@ from step 1
             Source filter	IP Ranges
             Source IP ranges	130.211.0.0/22, 35.191.0.0/16
             Protocols and ports	Specified protocols and ports, and then check tcp
+            
+ 
+ from step 2
+ 
+ > create GCE instance templates
+ 
+
+* 2.1, in cloud console, navigate to GCE >> instance template, type template's name, then click on the "Mgmt & Disk & Network", and click on "managment" tab.
+
+                      Key	                Value
+                    startup-script-url	gs://cloud-training/gcpnet/httplb/startup.sh
+                    
+* tips & attentions, script below is for startup of the instance template, which is called as Metadata in console.
+ 
+            #! /bin/bash
+
+            apt-get update 
+            apt-get install -y apache2 php
+            apt-get install -y wget
+            cd /var/www/html
+            rm index.html -f
+            rm index.php -f
+            wget https://storage.googleapis.com/cloud-training/gcpnet/httplb/index.php
+            META_REGION_STRING=$(curl "http://metadata.google.internal/computeMetadata/v1/instance/zone" -H "Metadata-Flavor: Google")
+            REGION=`echo "$META_REGION_STRING" | awk -F/ '{print $4}'`
+            sed -i "s|region-here|$REGION|" index.php
+
+* 2.2, click on "networking" tab, to config its network properties.
+
+            Property	  Value (type value or select option as specified)
+            Network	  default
+            Subnet	  default (us-east1)
+            Network tags  http-server
+
+ * tips & attentions:
+ 
+ The network tag http-server ensures that the HTTP and Health Check firewall rules apply to these instances template.
