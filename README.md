@@ -96,3 +96,19 @@ from step 1
        
        For Network interfaces, select default (europe-west1) as the Subnet.
 
+from step 3:
+
+> create GCE instance Group.
+
+* 3.1, in cloud console, navigate to GCE >> instance group.
+
+            Property	      Value (type value or select option as specified)
+            Name	      us-east1-mig[group name]
+            Location	      Multiple zones
+            Region	      us-east1
+            Instance template	us-east1-template [gce instance template name]
+            Autoscaling > Autoscaling metrics > Metric type	CPU utilization
+            Target CPU utilization	           80
+            Minimum number of instances	1
+            Maximum number of instances	5
+            Cool-down period	            45
