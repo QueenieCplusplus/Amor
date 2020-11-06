@@ -35,7 +35,9 @@ In this lab, you configure an HTTP Load Balancer with global backends, as shown 
 
 (9) monitor network flow from user(vm created in step 8 to backend service created in step 5)
 
-(10) config Amor List (Deny/Allow) to the LB
+(10) stop Request Test to LB
+ 
+(11) config Amor List (Deny/Allow) to the LB
 
 
 
@@ -278,3 +280,9 @@ start from step 9:
        [output in UI]
        
     ![flow](https://cdn.qwiklabs.com/YsNXQ3Hvf12bu7zmL%2B4cxUeGO01%2B4uchVOnaVW1QcMc%3D)
+
+start from step 10:
+
+> Stop Req to LB
+
+* 10.1, Return to the SSH terminal of siege-vm, and press CTRL+C to stop siege.
