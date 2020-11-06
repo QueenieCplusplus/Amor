@@ -240,10 +240,12 @@ start from step 8:
 * 8.1, create a new VM instance (we hereby set it to us-west), later on, we will connect it to Backend in us-east1 (location=zone) & europ-west1 (location=zone).
 
             Property	Value (type value or select option as specified)
-            Name	siege-vm
+            Name	kates-vm
             Region	us-west1
             Zone	us-west1-c
             
 * tips & attentions:
 
 Given that us-west1 is closer to us-east1 than to europe-west1, traffic should be forwarded only to us-east1-mig (unless the load is too high).
+
+* 8.2, For kates-vm, click SSH to launch a terminal and connect.
